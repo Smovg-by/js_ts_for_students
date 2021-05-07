@@ -1,5 +1,5 @@
-import {CityType} from "./02/02-02";
-import {HouseType} from "./02/02-02";
+import {CityType} from "../02-Test objects/02-02";
+// import {HouseType} from "./02/02-02";
 import {addMoneyBudget} from "./03";
 
 let city: CityType;
