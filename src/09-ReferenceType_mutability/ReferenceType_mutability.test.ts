@@ -1,7 +1,7 @@
 // Парадигма функционального программирования не допускает изменения исходных объектов.
 // Изменение объектов и их передача происходит по ссылке объекта. Нельзя просто присвоить значение объекта1 = оъект2 (так мы передаем ссылку reference type, соответственно все свойства будут меняться).
 
-test('OBJECT reference type test', () => {
+test.skip('OBJECT reference type test', () => {
   type UserType = {
     name: string
     age: number
@@ -23,7 +23,7 @@ test('OBJECT reference type test', () => {
 
 // Изменение массивов происходит так же, передача  по ссылке. Чтобы не изменять исходный массив нужно его скопировать!
 
-test('ARRAY test', () => {
+test.skip('ARRAY test', () => {
   type UserType = {
     name: string
     age: number
@@ -53,7 +53,7 @@ test('ARRAY test', () => {
 
 //Примитивы НЕ передаются по ссылке!
 
-test('VALUE type test', () => {
+test.skip('VALUE type test', () => {
   let usersCount = 10
 
   let adminsCount = usersCount
@@ -64,7 +64,7 @@ test('VALUE type test', () => {
   expect(adminsCount).toBe(11)
 })
 
-test('.sort() array test', () => {
+test.skip('.sort() array test', () => {
   let letters = ['b', 'c', 'a']
 
   letters.sort()
